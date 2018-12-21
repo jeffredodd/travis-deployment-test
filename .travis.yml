@@ -9,7 +9,6 @@ jobs:
     - stage: "Fundamental-react: Lint"
       script: npm run build
 deploy:
-  skip_cleanup: true
 - provider: script
   script: build/public_rc.sh
   on:
